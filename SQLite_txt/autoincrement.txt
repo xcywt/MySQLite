@@ -1,0 +1,13 @@
+create table autoincrement_test
+(
+ID INTEGER PRIMARY KEY AUTOINCREMENT,  -ID 是自动递增的
+NAME TEXT NOT NULL,
+AGE INT NOT NULL
+);
+
+insert into autoincrement_test(NAME, AGE) values('Paul', 3);
+insert into autoincrement_test(NAME, AGE) values('Kobe', 24);
+insert into autoincrement_test(NAME, AGE) values('KD', 35);
+insert into autoincrement_test(NAME, AGE) values('MJ', 23);
+
+select * from autoincrement_test;

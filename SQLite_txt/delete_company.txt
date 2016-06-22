@@ -1,0 +1,8 @@
+
+-- 删除ID为5的记录
+delete from company where ID = 5;
+
+-- 删除所有记录
+delete from company;
+
+select * from company;

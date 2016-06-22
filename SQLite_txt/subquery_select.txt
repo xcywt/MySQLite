@@ -1,0 +1,15 @@
+-- ID 大于4的人中找工资大于4000的
+select * from (select * from company where ID > 4) where SALARY > 4000; 
+
+-- ID 在 工资大于4000的范围内
+select * from company  where ID IN (select ID from company where SALARY > 4000); 
+
+
+
+
+
+
+
+
+
+

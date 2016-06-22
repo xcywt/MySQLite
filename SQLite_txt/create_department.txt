@@ -1,0 +1,22 @@
+drop table department;
+
+create table department(
+ID INT PRIMARY KEY NOT NULL,
+DEPT CHAR(50) NOT NULL,
+EMP_ID INT NOT NULL
+);
+
+-- 插入一些数据
+insert into department values(1, 'IT Billing', 1);
+insert into department values(2, 'Engineering', 2);
+insert into department values(3, 'Finance', 7);
+insert into department values(4, 'IT Billing', 3);
+insert into department values(5, 'Engineering', 4);
+insert into department values(6, 'Finance', 5);
+insert into department values(7, 'IT Billing', 6);
+
+
+select * from department;
+
+
+

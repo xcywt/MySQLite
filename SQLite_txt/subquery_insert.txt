@@ -1,0 +1,13 @@
+create table company_bak( -- 建一个和company一样的表
+ID INT PRIMARY KEY NOT NULL,
+NAME TEXT NOT NULL,
+AGE INT NOT NULL,
+ADDRESS CHAR(50),
+SALARY REAL
+);
+
+-- 利用查询查来的ID，再往一张一样的表中插入数据
+insert into company_bak select * from company where ID
+in(select ID from company);
+
+select * from company_bak;

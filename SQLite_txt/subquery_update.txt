@@ -1,0 +1,3 @@
+-- 大于30岁的人涨1.5倍工资，
+update company set SALARY = 1.5*SALARY where AGE IN
+(select AGE from company where AGE > 30);

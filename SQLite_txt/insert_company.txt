@@ -1,0 +1,7 @@
+insert into company values(1, 'Paul', 32, 'USA', 20000.0);
+insert into company (ID, NAME, AGE, ADDRESS,SALARY) VALUES(2, 'Mark',33,'JAP',1500.00);
+insert into company (ID, NAME, AGE, ADDRESS,SALARY) VALUES(3, 'Allen',35,'SPA',3000.00);
+insert into company (ID, NAME, AGE, ADDRESS,SALARY) VALUES(4, 'Jack',32,'JAP',2100.00);
+insert into company (ID, NAME, AGE, ADDRESS,SALARY) VALUES(5, 'David',25,'END',4500.00);
+insert into company (ID, NAME, AGE, ADDRESS,SALARY) VALUES(6, 'Kim',22,'AUS',3500.00);
+.read select_company.txt

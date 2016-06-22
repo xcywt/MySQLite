@@ -1,0 +1,16 @@
+
+select * from company;
+
+-- 更新ID为6的人，工资增加1000。只更新满足条件的记录
+-- update company set SALARY = SALARY + 1000 where ID = 6;
+
+-- 修改表中ADDRESS和SALARY的所有值，则不需要使用where子句
+update company set ADDRESS = 'Texas',SALARY = 10000.0;
+
+
+
+select * from company;
+
+
+
+

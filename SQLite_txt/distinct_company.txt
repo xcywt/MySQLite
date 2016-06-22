@@ -1,0 +1,3 @@
+select NAME, SALARY from company;
+
+select distinct NAME, SALARY from company;  -- 相同NAME只出现一次

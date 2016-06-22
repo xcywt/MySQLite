@@ -1,0 +1,40 @@
+-- 计算当前日期
+select date('now');
+
+-- 计算当前月份的最后一天
+-- now 后面接的是几个修饰符， 
+-- 'start of month'  当前月份开始
+-- '+1 month', 当前月份加一个月
+-- '-1 day'  减一天
+select date('now','start of month','+1 month','-1 day');
+
+-- 所以这个是上个月的第2天
+select date('now','start of month','-1 month','+1 day');
+
+-- 所以这个是今年的最后一天， 当前年加一年再减一天，就是今年的最后一天
+select date('now','start of year','+1 year','-1 day');
+
+-- 计算给定时间戳1992241466的日期和时间
+select datetime('1992241466', 'unixepoch');
+
+-- 计算新中国成立到现再的天数
+select julianday('now') - julianday('1949-10-01');
+
+
+-- 计算当年9月的第一个星期2的日期
+select date('now', 'start of year','+8 months','weekday 2');
+
+-- 在UTC与本地时间之间进行转化，当格式化日期时，用utc修饰符或localtime修饰符
+select time('12:00', 'localtime');
+select time('12:00', 'utc');
+
+-- 计算当前时间
+select datetime('now');
+select datetime('now', '+8 hour');  -- 北京在东八区  这个才是北京时间
+
+-- 当天的最后一秒
+select datetime('now', 'start of day', '+1 day', '-1 seconds');
+
+
+
+

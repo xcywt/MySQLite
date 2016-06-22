@@ -1,0 +1,9 @@
+/*
+insert into company values(8, 'Paul', 24, 'USA', 5000);
+insert into company values(9, 'James', 24, 'CNA', 4000);
+insert into company values(10, 'James', 25, 'USA', 6000);
+*/
+
+-- 按name进行分组，SUM( *** )  表示对里面的东西求和
+select NAME, SUM(SALARY) from company group by NAME order by NAME;
+select NAME, SUM(SALARY) from company group by NAME order by NAME DESC; -- 降序

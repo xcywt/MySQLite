@@ -1,0 +1,8 @@
+
+-- 显示名称计数小于 2 的所有记录：
+select * from company group by name having count(NAME) < 2;
+
+-- 显示名称计数等于 2 的所有记录：
+select * from company group by name having count(NAME) >= 2;
+
+

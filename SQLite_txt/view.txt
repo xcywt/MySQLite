@@ -1,0 +1,3 @@
+create view company_view as select NAME, ID, SALARY from company where SALARY>2000;
+
+-- drop view company_view;  -- и╬ЁЩйсм╪

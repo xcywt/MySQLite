@@ -1,0 +1,3 @@
+select tbl_name from sqlite_master where type = 'table'; -- 列出所有在数据库中创建的表
+
+select sql from sqlite_master where type = 'table' and tbl_name='company'; -- 列出表company的信息 

@@ -1,0 +1,8 @@
+select name from sqlite_master 
+where type = 'trigger';  --  列出所有的触发器
+
+
+select name from sqlite_master 
+where type = 'trigger' AND tbl_name='company'; -- 找出特定表中的触发器
+
+-- drop trigger trigger_name; -- 删除触发器

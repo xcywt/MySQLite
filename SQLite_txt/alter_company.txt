@@ -1,0 +1,3 @@
+alter table company rename to old_company; -- 重命名表
+
+alter table old_company add column sex char(1);-- 增加新列

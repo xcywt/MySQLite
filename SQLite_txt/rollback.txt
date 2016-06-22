@@ -1,0 +1,5 @@
+select * from company;
+begin;
+update company set SALARY = SALARY + 999;
+rollback;  -- 这里进行回滚，相当于没操作
+select * from company;

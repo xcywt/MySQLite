@@ -1,0 +1,3 @@
+select * from company order by SALARY; -- 升序 ，默认asc可以不写
+select * from company order by SALARY ASC;
+select * from company order by SALARY DESC;  -- 降序

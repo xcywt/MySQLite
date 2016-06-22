@@ -1,0 +1,5 @@
+create trigger audit_log after insert
+on company
+begin
+ insert into audit (EMP_ID, ENIRY_DATA) values(new.ID, datetime('now'));
+end;

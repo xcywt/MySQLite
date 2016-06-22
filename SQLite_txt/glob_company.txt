@@ -1,0 +1,4 @@
+select * from company where SALARY glob '2*';  -- 2 开头的SALARY
+select * from company where SALARY glob '210?.0';  -- 自己体会
+select * from company where NAME glob 'k*';  -- 可以看出大小写敏感
+select * from company where NAME glob 'K*';  -- 可以看出大小写敏感

@@ -1,0 +1,3 @@
+select C.ID as company_ID, C.NAME as company_NAME, D.DEPT as department_DEPT
+from company as C , department as D
+where C.ID = D.EMP_ID;

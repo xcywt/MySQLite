@@ -1,0 +1,25 @@
+
+-- AGE大于20 且 SALARY大于5000
+select * from company where AGE>25 AND SALARY >4500;
+
+-- AGE大于20 或 SALARY大于5000
+select * from company where AGE>25 OR SALARY >4500;
+
+-- AGE不为NULL
+select * from company where AGE IS NOT NULL;
+
+-- NAME以 ki 开头的，Ki之后的字符不做限制
+select * from company where NAME LIKE 'Ki%';
+select * from company where NAME GLOB 'Ki*';
+
+-- AGE 为22或25的所有记录
+select * from company where AGE IN(25, 22);
+
+-- AGE 不为22或25的所有记录
+select * from company where AGE NOT IN(25, 22);
+
+-- AGE 为25到35之间的所有记录
+select * from company where AGE BETWEEN 25 AND 35;
+
+-- 在工资大于3000的人中找到年龄在 25到35之间的
+select * from (select * from company where SALARY > 3000) where AGE BETWEEN 25 AND 35;

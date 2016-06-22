@@ -1,0 +1,3 @@
+--select * from company where SALARY like '2%';  -- 2 开头的SALARY
+select * from company where SALARY like '210_.0';  -- 自己体会
+select * from company where NAME like 'k%';  -- 可以看出大小写不敏感

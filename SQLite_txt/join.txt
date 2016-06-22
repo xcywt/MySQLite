@@ -1,0 +1,10 @@
+
+-- 交叉连接，表1与表2的所有列进行一一匹配
+ select EMP_ID, NAME, DEPT from company cross join department;
+
+-- 内连接，满足连接谓词时就生成一个新的结果
+select EMP_ID, NAME, DEPT from company inner join department on company.ID = department.EMP_ID; 
+
+-- 左外连接，从一个或两个表中任何未连接的行合并进来，外连接的列使用 NULL 值，将它们附加到结果表中。
+select EMP_ID, NAME, DEPT from company left outer join department on company.ID = department.EMP_ID; 
+

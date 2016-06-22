@@ -1,0 +1,2 @@
+create index salary_index on company(SALARY);  -- 创建索引
+select * from company INDEXED BY salary_index where SALARY > 4000; -- 利用索引进行查询

@@ -1,0 +1,5 @@
+select * from company;
+begin;
+update company set SALARY = SALARY + 999;
+commit;
+select * from company;

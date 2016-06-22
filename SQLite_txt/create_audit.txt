@@ -1,0 +1,4 @@
+create table audit(
+EMP_ID INT NOT NULL,
+ENIRY_DATE TEXT NOT NULL
+);

@@ -1,0 +1,11 @@
+-- 删除年龄大于30的客户记录
+delete from company where ID IN
+(select ID from company where AGE > 30);
+
+
+
+
+
+
+
+

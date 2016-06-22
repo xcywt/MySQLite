@@ -1,0 +1,8 @@
+create table tab_test
+(
+ID INT PRIMARY KEY NOT NULL,  -- 主键 非空
+NAME TEXT NOT NULL UNIQUE, -- 非空， 不相等
+AGE INT CHECK(AGE > 0), -- check约束，AGE必须大于0
+ADDRESS CHAR(50),
+SALARY REAL DEFAULT 5000.00 -- 默认约束
+);

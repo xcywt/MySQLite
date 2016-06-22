@@ -1,0 +1,3 @@
+.indices company -- .indices命令  列出company表上可用的所有的索引
+
+select * from sqlite_master where type='index'; -- 列出数据库范围内的所有索引

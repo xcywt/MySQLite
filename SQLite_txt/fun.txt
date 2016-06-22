@@ -1,0 +1,17 @@
+select count(*) from company;
+
+select MAX(SALARY), NAME from company;
+select MIN(SALARY), NAME from company;
+select MIN(SALARY), NAME from company;
+select SUM(SALARY) from company;
+
+select random() as Random;
+
+select ABS(5), ABS(-5), ABS(NULL), ABS('aa');
+
+select upper(NAME) as Big_Name from company;
+select lower(NAME) as Small_Name from company;
+
+select length(NAME) as Name_len , name from company;
+
+select sqlite_version() as SQL_VER;

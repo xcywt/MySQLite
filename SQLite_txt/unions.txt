@@ -1,0 +1,11 @@
+select EMP_ID,NAME,DEPT from company inner join department -- 内连接
+on company.ID = department.EMP_ID
+UNION
+select EMP_ID,NAME,DEPT from company left outer join department  -- 左外连接
+on company.ID = department.EMP_ID;
+
+select EMP_ID,NAME,DEPT from company inner join department -- 内连接
+on company.ID = department.EMP_ID
+UNION  ALL
+select EMP_ID,NAME,DEPT from company left outer join department  -- 左外连接
+on company.ID = department.EMP_ID;

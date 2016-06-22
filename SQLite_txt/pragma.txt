@@ -1,0 +1,27 @@
+
+pragma auto_vacuum;
+pragma cache_size;
+pragma case_sensitive_like;
+pragma count_changes;
+--pragma database_list;
+pragma encoding;
+pragma freelist_count;
+
+
+pragma auto_vacuum = FULL;
+pragma cache_size = 10;
+pragma case_sensitive_like = true;
+pragma count_changes = true;
+--pragma database_list;
+--pragma encoding = UTF-16le;
+--pragma freelist_count = 1;
+
+/*
+pragma auto_vacuum;
+pragma cache_size;
+pragma case_sensitive_like;
+pragma count_changes;
+--pragma database_list;
+pragma encoding;
+pragma freelist_count;
+*/
